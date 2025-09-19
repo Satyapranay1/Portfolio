@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body font */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Gradient Scrollbar Animation */
+@keyframes gradient-scroll {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Custom animated gradient scrollbar for WebKit */
+.scrollbar-custom::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(270deg, #14b8a6, #ec4899, #f97316);
+  background-size: 400% 400%;
+  animation: gradient-scroll 6s ease infinite;
+}
+
+/* Firefox */
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #14b8a6 #ec4899 transparent; /* fallback colors */
+}
+/* Animated Gradient Scrollbar */
+@keyframes gradient-scroll {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  height: 10px; /* horizontal */
+  width: 10px;  /* vertical */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(270deg, #14b8a6, #ec4899, #f97316);
+  background-size: 400% 400%;
+  animation: gradient-scroll 6s ease infinite;
+}
+
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #14b8a6 transparent; /* fallback for Firefox */
+}
