@@ -1,29 +1,30 @@
 const projects = [
   {
+    title: "TripVerse",
+    desc: "Full-stack travel management platform for booking flights and hotels with chat-based communication and secure authentication.",
+    tech: ["React.js", "TypeScript", "Tailwind CSS", "Spring Boot", "PostgreSQL", "JWT", "REST API"],
+    link: "https://trip-verse-gold.vercel.app/",
+  },
+  {
+    title: "Fit-Fusion",
+    desc: "Fitness tracking and workout recommendation app offering personalized plans, daily progress tracking, and nutrition tips.",
+    tech: ["React.js", "TypeScript", "PostgreSQL", "Spring Boot", "Tailwind CSS", "JWT Authentication"],
+    link: "https://fit-fusion-js8k.vercel.app",
+  },
+  {
+    title: "Personal Finance Tracker",
+    desc: "Comprehensive finance management app to track income, expenses, and savings with interactive visual analytics.",
+    tech: ["React.js", "Tailwind CSS", "Spring Boot", "MySQL", "Chart.js", "JWT", "REST API"],
+    link: "https://finance-tracker4-z17e.vercel.app/",
+  },
+  {
     title: "Weather Classification with VGG16",
-    desc: "Classified weather conditions using CNN & VGG16 with 98% accuracy.",
+    desc: "Implemented CNN with VGG16 to classify weather conditions from images using deep learning.",
     tech: ["VGG16", "CNN", "HTML", "CSS", "Flask"],
     link: "https://github.com/Satyapranay1/Weather-Classification",
   },
-  {
-    title: "Medical Insurance Estimator",
-    desc: "Estimated insurance costs with ML models, achieving MAE of 5000.",
-    tech: ["SVM", "Random Forest", "Streamlit", "CSS"],
-    link: "https://github.com/Satyapranay1/Medical-Insurance-Price",
-  },
-  {
-    title: "Bus Reservation System",
-    desc: "Full-stack platform for route search, seat booking, and schedule management.",
-    tech: ["PHP", "MySQL", "JavaScript"],
-    link: "https://github.com/Satyapranay1/Bus-Reservation-System",
-  },
-  {
-    title: "Olympic Data Analysis",
-    desc: "Analyzed Olympics data (1900–2016) highlighting trends, medals, and gender balance.",
-    tech: ["Python", "NumPy", "Pandas", "Streamlit", "CSS"],
-    link: "https://github.com/Satyapranay1/Olympics-Project",
-  },
 ];
+
 
 export default function Projects() {
   return (
