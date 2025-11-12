@@ -1,20 +1,22 @@
 const skills = {
-  "Programming Languages": ["Java", "Python", "JavaScript", "PHP"],
-  Databases: ["MySQL", "MongoDB"],
+  "Programming Languages": ["Java", "Python", "JavaScript", "TypeScript", "PHP"],
+  Frameworks: ["Spring Boot", "React.js", "Node.js", "Express", "Flask"],
+  Databases: ["PostgreSQL", "MySQL", "MongoDB"],
   "Machine Learning & Deep Learning": ["TensorFlow", "Scikit-learn", "Keras", "XGBoost"],
   "Data Analysis & Visualization": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly"],
   Tools: [
     "VS Code",
-    "GitHub",
+    "Git & GitHub",
     "Jupyter Notebook",
+    "Docker",
     "Streamlit",
     "MySQL Workbench",
+    "Postman",
     "Pydantic",
-    "Docker",
-    "Node.js",
-    "Express"
-  ]
+    "Tailwind CSS"
+  ],
 };
+
 
 export default function Skills() {
   return (
